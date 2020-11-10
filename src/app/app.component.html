@@ -8,12 +8,23 @@
    <span>513-222-7878 | </span> 
    <span>kalicorrell@gmail.com</span>
    </div>
-   
-   <div>
-    <h3>Work Experience</h3>
-    <p>{{workExperience}}</p>
-  </div>
-  <div>
-    <h3>Education</h3>
-    <p>{{education[0]}}</p>
-  </div>
+   <h3>Technology List</h3>
+
+   <!-- table tags -->
+<table class="table table-sm">
+    <thead>
+      <tr>
+        <td>Git </td>
+        <td>GitHub </td>
+        <td>MySQL </td> 
+        <td>Java </td> 
+      </tr>  
+    </thead>
+</table>
+<h3>Career Goals</h3>
+<p>My goals are to solve complex probelms using code.</p>
+<p>Develop new efficient strategies that help my company work smarter not harder.</p>
+<p>Teach new co-workers and interns that coding is just TOO EASY!</p>
+  
+<app-work-experience></app-work-experience>
+ <app-education *ngIf="displayEducation"></app-education>
